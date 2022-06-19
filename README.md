@@ -1,7 +1,8 @@
 # reminder-service
-## initial commit - 6/19/22 1:27 PM EST
-## bar met at - 6/19/22 2:22 PM EST
+initial commit - 6/19/22 1:27 PM EST  
+bar met at - 6/19/22 2:22 PM EST  
 
+## Instructions to run
 The easiest way to run this application is to leverage docker-compose.  You can run:  
 `docker-compose up -d`
 
