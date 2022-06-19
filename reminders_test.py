@@ -19,3 +19,5 @@ def test_get_with_data():
     response = reminders.get_all(r)
     for item in response:
         assert json.dumps(item) == '{"time": "07:30", "message": "hello world"}'
+
+# With more time, I'd flesh out these tests, adding cases for more items, edge cases like strange characters and other invalid / odd inputs
