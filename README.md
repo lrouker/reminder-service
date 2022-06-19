@@ -6,5 +6,7 @@ The easiest way to run this application is to leverage docker-compose.  You can 
 `docker-compose up -d`
 
 Then query the application with curl, for example using the commands provided in the prompt:   
-`curl -H"Content-Type: application/json" -XPOST -d '{"time": "07:30", "message": "hello world"}' http://localhost/api/reminders`  
+```
+curl -H"Content-Type: application/json" -XPOST -d '{"time": "07:30", "message": "hello world"}' http://localhost/api/reminders
+```
 `curl http://localhost/api/reminders`
