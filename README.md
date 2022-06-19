@@ -32,3 +32,4 @@ docker run -d --rm -p 80:5000 --network app-tier reminders:latest
   It might also be nice to know what user to send such a reminder to, currently all users are registering to the same data store.  Depending on the requirement, we would need to refactor the code to write the objects such that we can identify the user who submitted the reminder.  
 * I really enjoyed this challenge, thanks for the exercise.
 * I have actually never written a Python -> Redis implementation before today, so this was a fun new thing to learn!  
+* Please feel free to browse the commit history of this repo to get a sense of my problem-solving style.  
