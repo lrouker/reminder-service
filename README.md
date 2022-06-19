@@ -10,7 +10,15 @@ Then query the application with curl, for example using the commands provided in
 ```
 curl -H"Content-Type: application/json" -XPOST -d '{"time": "07:30", "message": "hello world"}' http://localhost/api/reminders
 ```
-`curl http://localhost/api/reminders`
+`curl http://localhost/api/reminders`  
+
+If you must run it with docker alone, use the following commands:  
+```
+docker network create app-tier  
+docker run -d --rm --name redis --network app-tier redis:alpine  
+docker build -t reminders:latest .  
+docker run -d --rm -p 80:5000 --network app-tier reminders:latest  
+```  
 
 ## Developer notes  
 * Test suite can be found in `reminders_test.py` with commentary around other tests I might have run with more time  
